@@ -73,7 +73,7 @@ a:hover {
 
 .about-menu>li {
   list-style: none;
-  border-bottom: 1px solid #fff;/* For debugging */
+  /* border-bottom: 1px solid #fff; For debugging */
   padding: 0 40px 10px 20px;
   margin: 10px;
 }
@@ -108,7 +108,7 @@ a:hover {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  border: 1px solid red;/* For debugging */
+/*  border: 1px solid red; For debugging */
 }
 
 .photo img {
@@ -122,6 +122,8 @@ a:hover {
   position: relative;
   justify-content: center;
   margin: auto;
+  padding: 1.5%;
+  background-color: #d6e9fe;
 }
 
 .photo-grid {
@@ -132,7 +134,7 @@ a:hover {
   position: relative;
   flex-direction: row;
   align-items: center;
-  border:1px solid green;/* For debugging */
+  /* border:1px solid green; For debugging */
 }
 
 .photo-grid-item {
@@ -148,17 +150,18 @@ a:hover {
   order: -1;
 }
 
-/*third section boxes*/
+/*third section */
+.illustration{
+  margin: auto;
+}
 .content {
   display: flex;
   margin: 0;
-  padding-bottom: 25px;
   position: relative;
-  top: 375px;
-  botton:150px;
   background-color: #EAEDF0;
-  height: 250px;
-  border:1px solid red;/* For debugging */
+  height: 350px;
+  /* border:1px solid red; For debugging */
+  align-items: center;
 }
 
 /*tag boxes*/
@@ -196,6 +199,7 @@ background-color: #D6E9FE;
 }
 
 /*footer*/
+/*
 .login-container {
   color: #fff;
   background-color: #5995DA;
@@ -205,34 +209,33 @@ background-color: #D6E9FE;
 }
 
 .login-box {
-  border: 1px solid #fff;/* For debugging */
+  border: 1px solid #fff;
   width: 900px;
   display: flex;
   justify-content: space-between;
 }
 
 .links {
-  border: 1px solid #fff;/* For debugging */
+  border: 1px solid #fff;
   display: flex;
   justify-content: flex-end;
 }
-
 .login {
   margin-left: 20px;
-}
+} */
 
 .socialbar-container {
   color: #5995DA;
-  background-color: #D6E9FE;
+  background-color: #eaedf0;
   display: flex;
   justify-content: center;
 }
 
 .socialbar {
-  width: 900px;
-  height: 300px;
+
+  height: 5%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -249,21 +252,12 @@ background-color: #D6E9FE;
 
 .footer-item {
   border: 1px solid #fff;
-  background-color: #D6E9FE;
+  background-color: #eaedf0;
   height: 200px;
   flex: 1;
 }
 
-.footer-three {
-  flex: 2;
-}
 
-.footer-one,
-.footer-three {
-  background-color: #5995DA;
-  flex: initial;
-  width: 300px;
-}
 
 .signup {
   margin-left: auto;
