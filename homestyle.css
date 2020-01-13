@@ -238,12 +238,12 @@ background-color: #D6E9FE;
   justify-content: space-around;
   align-items: center;
 }
-
+/*
 .social,
 .subscribe {
   align-self: flex-end;
   margin-bottom: 20px;
-}
+}*/
 
 .footer {
   display: flex;
@@ -256,12 +256,10 @@ background-color: #D6E9FE;
   height: 200px;
   flex: 1;
 }
-
-
-
+/*
 .signup {
   margin-left: auto;
-}
+}*/
 
 /*mobile styles */
 @media only screen and (max-width:400px) {
@@ -271,8 +269,8 @@ background-color: #D6E9FE;
   }
 }
 
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+/* phone to table Styles */
+@media only screen and (min-width: 401px) and (max-width: 767px) {
 
   .first-item,
   .second-item,
@@ -281,10 +279,38 @@ background-color: #D6E9FE;
   .fifth-item {
     width: 50%;
   }
+
+  .photo-grid-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    padding: 1.5%;
+    background-color: #d6e9fe;
+  }
+
+  .photo-grid {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: row;
+    margin:auto;
+    padding: 0px;
+    /* border:1px solid green; For debugging */
+  }
+
+  .photo-grid-item {
+    width: 300px;
+    height: 300px;
+  }
+
+
 }
 
 /*destop styles */
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 768px) and (max-width:  961px) {
 
   .first-item,
   .second-item,
