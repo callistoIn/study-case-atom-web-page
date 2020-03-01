@@ -1,204 +1,135 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
-
 body{
-  color: #5D6063;
-  background-color: #EAEDF0;
-  font-family: "helvatica","arial", sans-serif;
-  font-size: 16px;
-  line-height:1.3;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+display: flex;
+justify-content: center;
+width: 100%;
+height: auto;
 }
-
-.speaker-form-header{
-  text-align: center;
-  background-color: #F6F7F8;
-  border: 1px solid #D6D9DC;
-  border-radius: 3px;
-
-  width: 80%;
-  margin: 40px 0;
-  padding: 50px;
-}
-
-.speaker-form-header h1 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-.speaker-form{
-  background-color: #F6F7F8;
-  border: 1px solid #D6D9DC;
-  border-radius: 3px;
-
-  width: 80%;
-  padding: 50px;
-  margin: 0 0 40px 0;
-}
-.form-row {
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.form-row input[type="text"],
-.form-row input[type="email"] {
-  background-color: #FFFFFF;
-  border: 1px solid #D6D9DC;
-  border-radius: 3px;
-  width: 100%
-  padding:7px;
-  font-size: 14px;
-}
-.form-row {
-  margin-bottom: 15px;
-
-}
-
-.form-row input[type="text"]:invalid,
-.form-row input [type="email"]:invalid{
-  border: 1px solid #D55C5F;
-  color: #D55C5F;
-  box-shadow: none;/* remove default red glow in firefox*/
-}
-
-.legacy-form-row {
-  border: none;
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-.legacy-form-row legend {
-  margin-bottom: 15px;
-}
-
-.legacy-form-row .radio-label {
-  display: block;
-  font-size: 14px;
-  padding: 0 20px 0 10px;
-}
-
-.legacy-form-row input [Type="radio"]{
-  margin-top: 2px;
-}
-.legacy-form-row .radio-label,
-.legacy-form-row input[type="radio"] {
-  float:left;
-}
-.form-row {
+/*--- background ---*/
+.back-piki{
+  background-image:url(https://wallpapertag.com/wallpaper/full/4/9/8/6437-pokemon-wallpaper-2880x1800-for-samsung.jpg);
+  background-position: center;
+  position:absolute;
+  z-index: -1;
+  opacity: 0.2;
   width: 100%;
-  padding: 5px;
-  font-size: 14px;
+  height: 1800px;
 }
-.form-row select {
+/*--- main design ---*/
+.main-page{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  align-items:center;
+  margin-top:50px;
+  z-index: 1;
+  color:#3466AF;
+
+}
+.boxes{
   width: 100%;
-  padding: 5px;
-  font-size: 14px;
-  -webkit-appearance:none;
 }
 
-.form-row textarea {
-  font-family:"helvatica", "arial", sans-serif;
-  font-size: 14px;
-
-  border: 1px solid #D6D9DC;
-  border-radius: 3px;
-
-  min-height: 200px;
-  margin-bottom: 10px;
-  padding: 7px;
-  resize: none;
+fieldset{
+  width:100%;
+  padding-bottom:25px;
+  padding-top:25px;
+  padding-left:25px;
 }
 
-.form-row .instructions {
-  color: #999999;
-  font-size: 14px;
-  margin-bottom: 30px;
+select{
+  width:700px;
 }
-.form-row .checkbox-label {
-  margin-bottom: 0;
+.parag{
+  margin:auto;
 }
 
-.form-row button{
-font-size: 16px;
-font-weight: bold;
+.submit{
+  width:250px;
+  height:50px;
+  background-color:#3466AF;
+  color:#FFCB05;
+  text-align:center;
+  font-size: 25px;
+  font-weight: 400;
+  margin-top:25px;
+  margin-button:25px;
+}
 
-color: #FFFFFF;
-background-color: #5995DA;
+/*---------------------*/
 
-border: none;
-border-radius: 3px;
+/*---first box---*/
+.spa{
+  display:flex;
+  flex-direction: column;
+}
 
-padding: 10px 40px;
-cursor: pointer;
+.name input{
+  margin-left:50px;
+  height:25px;
+  width:171px;
+  opacity: 2;
+  z-index: 1;
+
+  font-size:17px;
 
 }
 
-.form-row button:hover{
-  background-color: #76AEED;
+.age input {
+  margin-left:75px;
+  height:25px;
+  width:171px;
+
+  font-size:17px;
+
 }
-.form-row button:active{
-  background-color: #407FC7;
+
+.email input {
+  margin-left:65px;
+  height:25px;
+  width:171px;
+
+  font-size:15px;
+
 }
 
 
+/*--- fonts ---*/
+.main-head{
+  text-align:center;
+  font-family: Cormorant;
+  font-weight:700;
+  font-size: 50px;
+  color:#3466AF;
+  padding-top: 25px;
 
-
-
-
-@media only screen and (min-width:700px){
-  .speaker-form-header,
-  .speaker-form{
-    width: 600px;
-  }
-  .form-row {
-    flex-direction: row;
-    align-items: flex-start;/* to avoid stretching */
-    margin-bottom: 20px;
-  }
-.form-row input[type="text"],
-.form-row input[type="email"],
-.form-row select,
-.form-row textarea {
-  width: 250px;
-  height: initial;
-  margin-top: 7px;
 }
-
-.form-row label{
-  text-align: right;
-  width: 120px;
-  margin-top: 5px;
-  padding-right: 20px;
+.description{
+  text-align:center;
+  font-family: Cormorant;
+  font-weight:500;
+  color:#3466AF;
+  font-size: 45px;
 }
-
-.legacy-form-row {
-  margin-bottom: 10px;
-  
+.page{
+  font-size:30px;
+  font-family:Cormorant;
+  line-height:50px;
+  letter-spacing:3px;
+  text-transform:capitalize;
+  font-weight:700;
+  color:#3466AF;
 }
-.legacy-form-row legend {
-  width: 120px;
-  text-align: right;
-  padding-right: 20px;
-}
-.legacy-form-row legend {
-  float: left;
-}
-.form-row .instructions {
-  margin-left: 120px;
-}
-.form-row .checkbox-label {
-  margin-left: 120px;
-  width: auto;
-}
-.form-row button {
-  margin-left: 120px;
-}
+.end-text{
+  padding-top:50px;
+  padding-bottom: 25px;
+  text-align:center;
+  font-family: Cormorant;
+  font-weight:700;
+  color:#3466AF;
+  text-transform: capitalize;
 }

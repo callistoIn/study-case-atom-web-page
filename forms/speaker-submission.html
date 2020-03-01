@@ -1,73 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="utf-8"/>
-  <title>Speaker Submission</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Which Pokemon is the Best</title>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-   <header class="speaker-form-header">
-     <h1>Speaker Submission</h1>
-     <p><em>Want to speak at our fake conference? Fill out this form.</em></p>
-   </header>
-   <form action="" method="get" class="speaker-form">
-     <div class="form-row">
-       <label for="full-name">Name</label>
-       <input id="full-name" name="full-name" type="text"/>
-     </div>
-     <dic class="form-row">
-       <label for="email">Email</label>
-       <input id="email"
-       name="email"
-       type="email"
-       placeholder="joe@example.com"/>
-     </div>
-     <fieldset class="legacy-form-row">
-       <legend>Type of Talk</legend>
+  <div class="back-piki"></div>
+  <main class="main-page">
+    <div class="page">
+      <div class="boxes info-boxes">
+        <h1 id="title" class="main-head">Pokemon Survey</h1>
+        <p id="description" class="description">Welcome to Our Little Pokemon Survey</p>
+      </div>
+      <form id="survey-form">
+        <div class="boxes info">
+          <fieldset class="spaces spa">
+            <legend class="parag pag1">A little information about yourself</legend>
+            <div class="name">
+              <Label for="name-label"> name</label>
+              <input type="text" id="name-label" name="name" maxlength="10" placeholder="Enter Your Name">
+            </div>
+            <div class="age">
+              <label for="age">Age</label>
+              <input type="date" id="age" name="age" />
+            </div>
+            <div class="email">
+              <label for="email-label">mail</label>
+              <input type="email" id="email-label" name="mail" placeholder="Enter Your E-mail Adres" />
+            </div>
 
-       <input id="talk-type-1"
-       name="talk-type"
-       type="radio"
-       value="main-stage"/>
+          </fieldset>
+        </div>
+        <div class="boxes">
+          <fieldset class="spaces spa1">
+            <Legend class="parag pag2"> which one was created first</legend>
+            <input type="checkbox" name="pokemon1" value="pikachu" /> pikachu<br />
+            <input type="checkbox" name="pokemon2" value="Bulbasaur" /> Bulbasaur<br />
+            <input type="checkbox" name="pokemon3" value="rhydon" /> Rhydon<br />
+            <input type="checkbox" name="pokemon4" value="magmar" /> Magmar<br />
+          </fieldset>
+        </div>
+        <div class="boxes">
+          <fieldset class="spaces spa2">
+            <legend class="parag pag3">Did Arceus create the Mew?</legend>
+            <select id="choose" name="yes/no">
+              <option value="none"></option>
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </fieldset>
+        </div>
+        <div class="boxes">
+          <fieldset class="spaces spa4">
+            <legend class="parag pag4">How many generation 1 pokemon are there?</legend>
+            <input type="number" id="number" name="number" />
+          </fieldset>
+        </div>
+        <div class="boxes">
+          <fieldset class="spaces spa5">
+            <legend class="parag pag5"> who is the creator of the pokemon</legend>
+            <input type="radio" name="creator" value="echiri oda"> Eiichiro Oda <br />
+            <input type="radio" name="creator" value="Hideo Kojima"> Hideo Kojima<br />
+            <input type="radio" name="creator" value="Ash Ketchum"> Ash Ketchum <br />
+            <input type="radio" name="creator" value=" Satoshi Tajiri "> Satoshi Tajiri
+          </fieldset>
+        </div>
+        <div class="boxes">
+          <fieldset class="spaces spa5">
+            <legend class="parag pag6"> which pokemon is the best?<br /> Explain it in 125 characters</legend>
+            <textarea maxlength="125" rows="4" cols="55" placeholder=" I think Pikachu is the best :3"></textarea>
+          </fieldset>
+        </div>
 
-       <label for="talk-type-1" class="radio-label">Main Stage</label>
-       <input id="talk-type-2"
-       name="talk-type"
-       type="radio"
-       value="workshop"
-       checked />
+      </form>
+      <div class="end-text">
+        <p> thank you for your contribution</p>
+        <button id="submit" class="submit" type="submit" onclick="alert('Gotta Catch Em All')">Submit</button>
+      </div>
 
-       <label for="talk-type-2" class="radio-label">workshop</label>
-     </fieldset>
+    </div>
 
 
-     <div class="form-row">
-       <label for="t-shirt">T-Shirt Size</label>
-       <select id="t-shirt" name="t-shirt">
-         <option value="xs">Extra Small</option>
-         <option value="s">Small</option>
-         <option value="m">Medium</opiton>
-         <option value="l">Large</option>
-       </select>
-     </div>
-     <div class="form-row">
-       <label for="abstract">Abstract</label>
-       <textarea id="abstract" name="abstract"></textarea>
-       <div class="instructions">Describe your talk in 500 words or less</div>
-     </div>
+  </main>
 
-<div class="form-row">
-  <label class="checkbox-label" for="available">
-    <input id="available"
-    name="available"
-    type="checkbox"
-    value="is-avaiable"/>
-    <span>I'm actually available the date of the talk</span>
-  </label>
-</div>
-<div class="form-row">
-  <button>Ver kurtul</button>
+</body>
 
-   </form>
- </body>
- </html>
+</html>
