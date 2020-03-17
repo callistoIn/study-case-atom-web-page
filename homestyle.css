@@ -315,6 +315,10 @@ background-color: #D6E9FE;
     /*red*/
   }
   /*navigation*/
+  /*off*/
+  .header{
+  display: none;
+  }
   /*first section main header*/
   .section {
     width: auto;
@@ -326,38 +330,41 @@ background-color: #D6E9FE;
     padding: 0;
   /*  border: 1px solid red; For debugging */
   }
-  .logo{
+
+  .responsive-header{
+    border:1px solid red;
+    height:17%;
+    display: flex;
+    width: 100%;
+    background: #D6E9FE;
+    z-index: 1;
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-logo{
     display: flex;
     align-items: center;
     margin: auto;
-    margin:0;
-    padding: 0;
+    justify-content: center;
+    margin-top: 7%;
   }
-  .logo-img{
-    margin:0;
-    width: 100%;
-    margin:0;
+
+  .mobile-logo-img{
+    width: 50%;
     border:1px solid red;
   }
-  .header{
-  border:1px solid red;
-  height:25px;
-  }
 
-  .menu li{
-  display: none;
-  }
-.responsive-header{
+.mobile-buttons{
   display: flex;
-  width: 100%;
-  height: 75px;
-  border:1px solid Whited;
-  z-index: 2;
-  background-color: #b2D6ff;
-  position: fixed;
-
-
+  flex-direction: row;
 }
+
+
+
+
 
 }
 
