@@ -332,7 +332,7 @@ background-color: #D6E9FE;
   }
 
   .responsive-header{
-    border:1px solid red;
+
     height:17%;
     display: flex;
     width: 100%;
@@ -349,22 +349,45 @@ background-color: #D6E9FE;
     align-items: center;
     margin: auto;
     justify-content: center;
-    margin-top: 7%;
+
   }
 
   .mobile-logo-img{
-    width: 50%;
-    border:1px solid red;
+    width: 75%;
+
   }
 
 .mobile-buttons{
   display: flex;
   flex-direction: row;
+  margin:auto;
+  justify-content: space-between;
+  width: 80%;
 }
+.mobile-anq{
+  display: flex;
+  flex-direction: column;
+}
+.mobile-icons{
+  width: 40px;
+  height: 40px;
+}
+.b1{
+display: flex;
+justify-content: flex-start;
+margin-left: 10px;
+}
+.b4{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+.mobile-anq::before{
 
-
-
-
+}
+.mobile-anq::after{
+  transition: 0.3;
+}
 
 }
 
