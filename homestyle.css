@@ -98,6 +98,10 @@ a:hover {
 .page {
   display: flex;
   flex-wrap: wrap;
+  margin:0;
+  height: 100%;
+  padding: 0;
+  padding-top: 32%;
 }
 
 /*first section main header*/
@@ -114,7 +118,8 @@ a:hover {
 
 .photo img {
   width: 100%;
-  display: block;
+  height: auto;
+  display: flex ;
 }
 
 /* second section boxes*/
@@ -123,7 +128,8 @@ a:hover {
   position: relative;
   justify-content: center;
   margin: auto;
-  padding: 1.5%;
+  padding-top: 2%;
+    padding-bottom: 2%;
   background-color: #d6e9fe;
 }
 
@@ -153,7 +159,13 @@ a:hover {
 
 /*third section */
 .illustration{
-  margin: auto;
+  margin:auto;
+}
+.illustration-img{
+  margin:3%;
+  padding: 3%;
+  width: 95%;
+  height: 95%;
 }
 .content {
   display: flex;
@@ -168,21 +180,44 @@ a:hover {
 /*tag boxes*/
 .column {
   float: left;
-  width: 31%;
+  width: 40%;
   margin: 20px 1.15%;
-  height: 160px;
+  height: 350px;
   background-color: #b2D6ff;
   /*mediyım blue */
+  border:1px solid red;
+
+
+
+
 }
 
 .tagboxes {
   position:relative;
-background-color: #D6E9FE;
+  background-color: #D6E9FE;
+  border:1px solid red;
+  width: auto;
+  height: 100%;
   /* Light blue */
+    border:1px solid red;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap:5%;
+}
+.grid-item{
+  width: auto;
+  text-align: center;
+  align-items: center;
+
 }
 
 .avatar {
-  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 60px;
   height: 60px;
   margin: 25px;
@@ -401,6 +436,8 @@ margin-left: 10px;
   .fifth-item {
     width: 50%;
   }
+
+
 
   .photo-grid-container {
     display: flex;
