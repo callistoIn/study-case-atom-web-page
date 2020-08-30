@@ -1,180 +1,175 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Awsome Study Case</title>
-    <link href="homestyle.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <title>Awsome Study Case</title>
+  <link href="homestyle.css" rel="stylesheet" />
 </head>
-
 <body>
-    <!--navigation menu-->
-    <div class="header">
-        <div class="logo">
-            <img class="logo-img" src="images/awesome-logo.svg" />
-        </div>
-        <ul class="menu">
-            <li class="dropdown">
-                <span>Other Things &#9662;</span>
-                <ul class="about-menu">
-                    <li><a href="web-typography\web-fonts.html" target="_blank">Fonts</a></li>
-                    <li><a href="https://codepen.io/devil1cal" target="_blank">Study Cases</a></li>
-                    <li><a href="forms\speaker-submission.html" target="_blank">Form</a></li>
-                    <li><a href="https://www.linkedin.com/in/damlaumar/" target="_blank">Semantic Web Page</a></li>
-                </ul>
-            </li>
+<!---------------------------------------------------------------------------------------------->
+                                <!--responsive header--->
+<!---------------------------------------------------------------------------------------------->
+  <div class="responsive-header">
+    <div class="mobile-logo">
+      <img class="mobile-logo-img" src="images/awesome-logo.svg" />
+    </div>
+    <div class="mobile-buttons">
+      <a class="mobile-anq b1" href="web-typography\web-fonts.html" target="_blank"><img class="mobile-icons" src="images\galactic-republic-brands.svg" alt="Web Typography" /> </a>
+      <a class="mobile-anq b2" href="https://codepen.io/devil1cal" target="_blank"><img class="mobile-icons" src="images\galactic-senate-brands.svg" alt="Codepen" /> </a>
+      <a class="mobile-anq b3" href="forms\speaker-submission.html" target="_blank"><img class="mobile-icons" src="images\jedi-solid.svg" alt="Pokemon Survey" /> </a>
+      <a class="mobile-anq b4" href="https://www.linkedin.com/in/damlaumar/" target="_blank"><img class="mobile-icons" src="images\old-republic-brands.svg" alt="LinkedIn" /> </a>
+    </div>
+  </div>
+<!---------------------------------------------------------------------------------------------->
+                                 <!--navigation menu-->
+<!---------------------------------------------------------------------------------------------->
+  <div class="header">
+    <div class="navigation-menu">
+      <div class="logo">
+        <img class="logo-img" src="images/awesome-logo.svg" />
+      </div>
+      <ul class="menu">
+        <li class="dropdown">
+          <span>Other Things <span class="arrowb" >&#9662;</span></span>
+          <ul class="about-menu">
+            <li><a href="web-typography\web-fonts.html" target="_blank">Fonts</a></li>
+            <li><a href="https://codepen.io/devil1cal" target="_blank">Study Cases</a></li>
+            <li><a href="forms\speaker-submission.html" target="_blank">Form</a></li>
             <li><a href="https://www.linkedin.com/in/damlaumar/" target="_blank">Semantic Web Page</a></li>
-        </ul>
+          </ul>
+        </li>
+        <li><a href="https://www.linkedin.com/in/damlaumar/" target="_blank">Semantic Web Page</a></li>
+      </ul>
     </div>
-
-    <!--responsive header--->
-    <div class="responsive-header">
-        <div class="mobile-logo">
-            <img class="mobile-logo-img" src="images/awesome-logo.svg" />
-        </div>
-        <div class="mobile-buttons">
-            <a class="mobile-anq b1" href="web-typography\web-fonts.html" target="_blank"><img class="mobile-icons" src="images\galactic-republic-brands.svg" alt="Web Typography" /> </a>
-            <a class="mobile-anq b2" href="https://codepen.io/devil1cal" target="_blank"><img class="mobile-icons" src="images\galactic-senate-brands.svg" alt="Codepen" /> </a>
-            <a class="mobile-anq b3" href="forms\speaker-submission.html" target="_blank"><img class="mobile-icons" src="images\jedi-solid.svg" alt="Pokemon Survey" /> </a>
-            <a class="mobile-anq b4" href="https://www.linkedin.com/in/damlaumar/" target="_blank"><img class="mobile-icons" src="images\old-republic-brands.svg" alt="LinkedIn" /> </a>
-        </div>
+  </div>
+<!---------------------------------------------------------------------------------------------->
+                           <!--first section header and numbers-->
+<!---------------------------------------------------------------------------------------------->
+  <section class="first-section">
+    <div class='banner'>
+      <div class="photo">
+        <picture>
+          <source media="(min-width:960px)" srcset="images/photo-big.jpg" />
+          <source media="(min-width:401px)" srcset="images/photo-tall.jpg" />
+          <img src="images/photo-small.jpg" />
+        </picture>
+      </div>
     </div>
-
-    <!--first section header and numbers-->
-    <section class="first-section">
-        <div class='banner'>
-                <div class="photo">
-                    <picture>
-                        <source media="(min-width:960px)" srcset="images/photo-big.jpg" />
-                        <source media="(min-width:401px)" srcset="images/photo-tall.jpg" />
-                        <img src="images/photo-small.jpg" />
-                    </picture>
-                </div>  
+  </section>
+<!---------------------------------------------------------------------------------------------->
+                                    <!--second section-->
+<!---------------------------------------------------------------------------------------------->
+  <section class="section secomd-section">
+    <!--numbers-->
+    <div class="photo-grid-container">
+      <div class="photo-grid">
+        <div class="photo-grid-item first-item">
+          <a href="https://9nih5.csb.app/"><img src="images/one.svg" /></a>
         </div>
-    </section>
-
-    <!--second section-->
-    <section class="section secomd-section">
-        <!--numbers-->
-        <div class="photo-grid-container">
-            <div class="photo-grid">
-                <div class="photo-grid-item first-item">
-                    <a href="https://9nih5.csb.app/"><img src="images/one.svg" /></a>
-                </div>
-                <div class="photo-grid-item second-item">
-                    <a href="https://codepen.io/devil1cal/full/yLBopag"><img src="images/two.svg" /></a>
-                </div>
-                <div class="photo-grid-item third-item">
-                    <a href="https://codepen.io/devil1cal/full/KKPvZwz"> <img src="images/three.svg" /></a>
-                </div>
-                <div class="photo-grid-item fourth-item">
-                    <a href="https://codepen.io/devil1cal/full/EeEgEv"><img src="images/four.svg" /></a>
-                </div>
-                <div class="photo-grid-item fifth-item">
-                    <a href="https://5bj54.csb.app/"> <img src="images/five.svg" /></a>
-                </div>
-            </div>
+        <div class="photo-grid-item second-item">
+          <a href="https://codepen.io/devil1cal/full/yLBopag"><img src="images/two.svg" /></a>
         </div>
-    </section>
-
-    <!--third section-->
-    <section class="section third-section">
-        <!--small size header-->
-        <div class='section content'>
-            <div class='illustration'>
-                <img class="illustration-img" src='illustration-small.png' srcset='images/illustration-small.png 1x,
-		images/illustration-big.png 2x' style='max-width: 401px' />
-            </div>
+        <div class="photo-grid-item third-item">
+          <a href="https://codepen.io/devil1cal/full/KKPvZwz"> <img src="images/three.svg" /></a>
         </div>
-    </section>
-
-    <!--fourth section-->
-    <section class="section fourth-section">
-        <div class="tagboxes grid-container">
-            <div class="column grid-item">
-                <div class="avatar">
-                    <img src="images\devil1calavatar.PNG" width="75" alt="A dancing mochi ball" />
-                </div>
-                <h3 class="username">Devil1cal</h3>
-                <p class="comment">What! I'm creating useless things? Yeah maybe, but I like them.</p>
-            </div>
-            <div class="column grid-item">
-                <div class="avatar">
-                    <img src="images/mochi.gif" width="75" alt="A dancing mochi ball" />
-                </div>
-                <h3 class="username">Images</h3>
-                <p class="comment ">
-                    This page covers common image formats, but you may also be looking for
-                    <a href="https://www.w3schools.com/html/html_links.asp">Links</a> and
-                    <a href="https://internetingishard.com/">useful extras</a>
-                </p>
-            </div>
-            <div class="column grid-item">
-                <div class="avatar">
-                    <img src="images/mochi.jpg" width="75" alt="A Mochi ball in a bubble" />
-                </div>
-                <h3 class="username">JPGs</h3>
-                <p class="comment">JPG images are good for photos</p>
-            </div>
-            <div class="column grid-item">
-                <div class="avatar">
-                    <img src="images\mochi.gif" width="75" alt="A dancing mochi ball" />
-                </div>
-                <h3 class="username">GIFs</h3>
-                <p class="comment">JPG images are good for photos</p>
-            </div>
-            <div class="column grid-item">
-                <div class="avatar">
-                    <img src="images/mochi.png" width="75" alt="A mochi ball">
-                </div>
-                <h3 class="username">PNGs</h3>
-                <p class="comment">PNGs are good for diagrams and icons</p>
-            </div>
-            <div class="column grid-item">
-                <div class="avatar">
-                    <img src="images/mochi.svg" alt="A mochi ball with Bézier handles" />
-                </div>
-                <h3 class="username">SVGs</h3>
-                <p class="comment">SVGs are <em>amazing</em>.Use them whatever you can</p>
-            </div>
+        <div class="photo-grid-item fourth-item">
+          <a href="https://codepen.io/devil1cal/full/EeEgEv"><img src="images/four.svg" /></a>
         </div>
-    </section>
-
-    <!--fifth section footer-->
-    <div class="section footer">
-        <div class="socialbar-container">
-            <div class="socialbar">
-                <section class="box thirdtab">
-                    <div id="contact" class="connect-sect">
-                        <p>let's work together</p>
-                        <div class="con-info-main">
-                            <a class="con-info" href="https://www.linkedin.com/in/damlaumar/" target="_blank"><img class="connect-pic" src="https://followmyvote.com/wp-content/uploads/2015/06/linkedin-logo-300x300.png" /></a>
-                            <a class="con-info" href="https://github.com/devil1cal" target="_blank"><img class="connect-pic" src="https://cdn.iconscout.com/icon/free/png-256/github-165-864021.png" /></a>
-                            <a class="con-info" href="https://www.freecodecamp.org/fcccd2846b3-f9c9-43a3-9be2-811a3da03b19" target="_blank">
-                                <img class="connect-pic"
-                                     src="https://d33wubrfki0l68.cloudfront.net/e66392bc2941ad564b6956321e778f29073cf585/4190b/img/glyph-alternative.svg" />
-                            </a>
-                            <a class="con-info" href="https://codepen.io/devil1cal/" target="_blank"><img class="connect-pic" src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-White-Large.png" /> </a>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!--  <div class="login-container">
-        <div class="login-box">
-          <div class="date">Aug 14,2018</div>
-          <div class="signup">Sign Up</div>
-          <div class="login">Login</div>
+        <div class="photo-grid-item fifth-item">
+          <a href="https://5bj54.csb.app/"> <img src="images/five.svg" /></a>
         </div>
       </div>
-      <div class="footer-item footer-one"></div>
-      <div class="footer-item footer-two"></div>
-      <div class="footer-item footer-three"></div>
-    </div>--->
+    </div>
+  </section>
+<!---------------------------------------------------------------------------------------------->
+                                       <!--third section-->
+<!---------------------------------------------------------------------------------------------->
+  <section class="section third-section">
+    <!--small size header-->
+    <div class='section content'>
+      <div class='illustration'>
+        <img class="illustration-img" src='illustration-small.png' srcset='images/illustration-small.png 1x,
+		images/illustration-big.png 2x' style='max-width: 401px' />
+      </div>
+    </div>
+  </section>
+<!---------------------------------------------------------------------------------------------->
+                                      <!--fourth section-->
+<!---------------------------------------------------------------------------------------------->
+  <section class="section fourth-section">
+    <div class="tagboxes grid-container">
+      <div class="column grid-item">
+        <div class="avatar">
+          <img src="images\devil1calavatar.PNG" width="75" alt="A dancing mochi ball" />
+        </div>
+        <h3 class="username">Devil1cal</h3>
+        <p class="comment">What! I'm creating useless things? Yeah maybe, but I like them.</p>
+      </div>
+      <div class="column grid-item">
+        <div class="avatar">
+          <img src="images/mochi.gif" width="75" alt="A dancing mochi ball" />
+        </div>
+        <h3 class="username">Images</h3>
+        <p class="comment ">
+          This page covers common image formats, but you may also be looking for
+          <a href="https://www.w3schools.com/html/html_links.asp">Links</a> and
+          <a href="https://internetingishard.com/">useful extras</a>
+        </p>
+      </div>
+      <div class="column grid-item">
+        <div class="avatar">
+          <img src="images/mochi.jpg" width="75" alt="A Mochi ball in a bubble" />
+        </div>
+        <h3 class="username">JPGs</h3>
+        <p class="comment">JPG images are good for photos</p>
+      </div>
+      <div class="column grid-item">
+        <div class="avatar">
+          <img src="images\mochi.gif" width="75" alt="A dancing mochi ball" />
+        </div>
+        <h3 class="username">GIFs</h3>
+        <p class="comment">JPG images are good for photos</p>
+      </div>
+      <div class="column grid-item">
+        <div class="avatar">
+          <img src="images/mochi.png" width="75" alt="A mochi ball">
+        </div>
+        <h3 class="username">PNGs</h3>
+        <p class="comment">PNGs are good for diagrams and icons</p>
+      </div>
+      <div class="column grid-item">
+        <div class="avatar">
+          <img src="images/mochi.svg" alt="A mochi ball with Bézier handles" />
+        </div>
+        <h3 class="username">SVGs</h3>
+        <p class="comment">SVGs are <em>amazing</em>.Use them whatever you can</p>
+      </div>
+    </div>
+  </section>
+<!---------------------------------------------------------------------------------------------->
+                                 <!--fifth section footer-->
+<!---------------------------------------------------------------------------------------------->
+  <div class="section footer">
+    <div class="socialbar-container">
+      <div class="socialbar">
+        <section class="box thirdtab">
+          <div id="contact" class="connect-sect">
+            <p>let's work together</p>
+            <div class="con-info-main">
+              <a class="con-info" href="https://www.linkedin.com/in/damlaumar/" target="_blank"><img class="connect-pic" src="https://followmyvote.com/wp-content/uploads/2015/06/linkedin-logo-300x300.png" /></a>
+              <a class="con-info" href="https://github.com/devil1cal" target="_blank"><img class="connect-pic" src="https://cdn.iconscout.com/icon/free/png-256/github-165-864021.png" /></a>
+              <a class="con-info" href="https://www.freecodecamp.org/fcccd2846b3-f9c9-43a3-9be2-811a3da03b19" target="_blank">
+                <img class="connect-pic" src="https://d33wubrfki0l68.cloudfront.net/e66392bc2941ad564b6956321e778f29073cf585/4190b/img/glyph-alternative.svg" />
+              </a>
+              <a class="con-info" href="https://codepen.io/devil1cal/" target="_blank"><img class="connect-pic" src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-White-Large.png" /> </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+<!---------------------------------------------------------------------------------------------->
 </body>
 </html>
