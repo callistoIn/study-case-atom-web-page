@@ -318,7 +318,7 @@ body {
     justify-content: space-around;
     flex-direction: column;
     margin: auto;
-    border:1px solid black;
+    margin-top:5%;
   }
 
   a:link,
@@ -334,7 +334,7 @@ body {
   .menu {
     display: inline-flex;
     flex-direction: row;
-    margin-top: 15px;
+    margin-top: 15%;
     margin: 9%;
     text-align: center;
   }
@@ -351,17 +351,14 @@ body {
   .dropdown {
     position: relative;
     padding: auto;
-    border:1px solid red;
-
   }
 
   .dropdown>span {
     z-index: 2;
     position: relative;
     cursor: pointer;
-
-
   }
+
   .arrowb{
     margin: 40%;
   }
@@ -387,12 +384,21 @@ body {
     list-style: none;
     /* border-bottom: 1px solid #fff; For debugging */
     padding: 0 40px 10px 20px;
-    margin: 6%;
-    padding-top: 2,5%;
-
+    margin:0;
+    align-items: center;
+    text-align: center;
+    margin-top:3%;
+    padding-left:32%;
+    border: 1px solid red;
+  }
+  .about-menu>.first-li{
+    margin-top: 10%;
 
   }
+  .about-menu>.last-li{
+text-align: center;
 
+  }
   .about-menu>li:last-of-type {
     border-bottom: none;
   }
